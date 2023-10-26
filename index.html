@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW3</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <form>
+        <label for="minCol">Min Column Range (-50 to 50):</label><br>
+        <input type="text" id="minCol" name="minCol"><br>
+        <label for="maxCol">Max Column Range (-50 to 50):</label><br>
+        <input type="text" id="maxCol" name="maxCol"><br>
+        <label for="minRow">Min Row Range (-50 to 50):</label><br>
+        <input type="text" id="minRow" name="minRow"><br>
+        <label for="maxRow">Max Row Range (-50 to 50):</label><br>
+        <input type="text" id="maxRow" name="maxRow"><br>
+        <button type="button" onclick="submitRange()">Submit</button>
+    </form>
+	<script src="index.js"></script>
+    <table id = "multTable">
+    </table>
+  </body>
+</html>
