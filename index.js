@@ -1,7 +1,7 @@
-var minCol = 0;
-var minRow = 0;
-var maxCol = 0;
-var maxRow = 0;
+let minCol = 0;
+let minRow = 0;
+let maxCol = 0;
+let maxRow = 0;
 
 function submitRange () {
     //alert("Button Pressed");
@@ -12,5 +12,5 @@ function submitRange () {
     //alert(minCol + "\n" + maxCol + "\n" + minRow + "\n" + maxRow + "\n");
 }
 function createTable() {
-    
+    //do something
 }
