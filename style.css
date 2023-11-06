@@ -25,3 +25,20 @@ label {
     margin: auto;
 
 }
+table {
+    margin: auto;
+    width: auto;
+    border: 1px solid black;
+}
+table tr, th {
+    border: 1px solid black;
+}
+tr {
+    background: pink;
+}
+tr:nth-child(1) {
+    background: red;
+}
+th:nth-child(1) {
+    background: red;
+}
