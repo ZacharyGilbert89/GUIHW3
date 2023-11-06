@@ -12,8 +12,10 @@ document.querySelector("form").addEventListener("submit", function (e) {
     //alert(minCol + "\n" + maxCol + "\n" + minRow + "\n" + maxRow + "\n");
     //alert("Calling CreateTable");
     //console.log(minCol + " " + maxCol + " " + minRow + " " + maxRow + " " );
+    
     const table = document.createElement("table");
     const tabledata = document.getElementById("table");
+    tabledata.innerHTML = "";
     minRow -= 1;
     minCol -= 1;
     for (let i = minRow; i <= maxRow; i++) {
