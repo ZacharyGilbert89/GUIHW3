@@ -32,18 +32,18 @@ label, input {
 input {
     margin: auto;
 }
-table {
-    margin: auto;
-    border: 1px solid black;
+#table {
+    margin:auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px;
+    max-width: 1000px;
 }
 table tr, th {
     border: 1px solid black;
 }
 tr {
     background: #10a9e2;
-}
-th {
-    width: 1%;
 }
 tr, th {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */

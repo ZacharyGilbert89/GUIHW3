@@ -17,7 +17,7 @@ document.querySelector("form").addEventListener("submit", function (e) {
       //Show Error
       errorDiv.innerText = "An Input is Out of Range!!!! (-50 to 50)";
       //alert("Temp Error, an input is out of range");
-    } else if((minCol >= maxCol) || (minRow >= maxRow)) {
+    } else if((minCol > maxCol) || (minRow > maxRow)) {
       //throw Error
       errorDiv.innerText = "A Min Value CANNOT Exceed a Max Value!";
       //alert("Temp Error, an minimum cannot be greater or equal to max");
