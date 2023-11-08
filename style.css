@@ -1,14 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/earth-orbiter');
 body {
     margin:auto;
     background: linear-gradient(to right, aquamarine, #10a9e2);
     background-attachment: fixed;
+    
 }
 h1 {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
     margin-top: 30px;
     text-align: center;
     font-size: 5rem;
 }
 input::placeholder {
+    
     text-align: center;
     color: black;
     font-weight: bold;
@@ -19,17 +23,30 @@ input::placeholder {
     color: red;
 }
 form {
+
     border: 1px solid black;
+    padding: 20px;
     border-width: 5px;;
     width: 500px;
     margin-top: 50px;
     margin: auto;
     text-align: center;
 }
+fieldset {
+    font-weight: 500;
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    font-size: x-large;
+    border:none;
+}
+label {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;
+    padding: 5px;
+}
 label, input {
     display: block;
 }
 input {
+    
     margin: auto;
 }
 #table {
