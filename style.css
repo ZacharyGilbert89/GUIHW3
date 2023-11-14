@@ -63,6 +63,7 @@ tr {
     background: #10a9e2;
 }
 tr, th {
+    padding: 15px 15px;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
 }
