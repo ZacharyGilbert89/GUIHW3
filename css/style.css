@@ -1,0 +1,100 @@
+/* File: index.html
+GUI Assignment: Creating Your First Web Page
+Zachary Gilbert, UMass Lowell Computer Science,
+Zachary_Gilbert@student.uml.edu
+Copyright (c) 2023 by Zachary Gilbert. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by ZG on November 14th, 2023 at 11:30 AM */
+
+@import url('https://fonts.cdnfonts.com/css/earth-orbiter');
+body {
+    margin:auto;
+    background: linear-gradient(to right, aquamarine, #10a9e2);/*Background color*/
+    background-attachment: fixed;/*Fixed so if the table went off the page by some reason, the background would stay the same*/
+    
+}
+h1 {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;/*Font type*/
+    margin-top: 30px;/*Margin to seperate the top of the screen for formatting*/
+    text-align: center;/*Centers the text*/
+    font-size: 5rem;/*Font size scales with the screen*/
+}
+input::placeholder {/*Placeholder text when the input fields have not been inputted, instructing the user to enter values*/
+    text-align: center;/*Centers the text in the middle of the inputbox*/
+    color: black;/*Font color black*/
+    font-weight: bold;
+}
+#inputError{
+    padding: 4px;/*Padding all around so elements are not too close to eachother*/
+    margin-top: 10px;/*Seperates the top of the input error box*/
+    color: red;/*Error color is red*/
+}
+form {
+    border: 1px solid black;/*Nice border around the input box*/
+    padding: 20px;/*Padding so elements inside text box are not on the border line*/
+    border-width: 5px;
+    width: 500px;/*Fixed width*/
+    margin-top: 50px;/*Gives some space from the top of the page*/
+    margin: auto;/*Centers*/
+    text-align: center;/*Centers*/
+    margin-bottom: 50px;/*Gives some space from the bottom to the table*/
+}
+fieldset {/*Title*/
+    font-weight: 500;/*Bold*/
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;/*Font selection*/
+    font-size: x-large;/*Bigger text*/
+    border:none;/*No Border*/
+}
+label {
+    font-family: 'Earth Orbiter Extra-Bold', sans-serif;/*Sets the font family*/
+    padding: 5px;/*Padding*/
+}
+label, input {
+    display: block;
+}
+input {
+    margin: auto;/*Centers*/
+}
+#table {
+    margin:auto;/*Centers*/
+    overflow-x: auto;/*Have to do this or the elements will go outside the bounds*/
+    overflow-y: auto;/*Have to do this or the elements will go outside the bounds*/
+    max-height: 500px;/*Sets the max height the table can be before scroll bars are used*/
+    max-width: 1000px;/*Sets the max width the table can be before scroll bars are used*/
+}
+table tr, th {
+    border: 1px solid black;/*Border around table and its cells*/
+}
+tr {
+    background: #10a9e2;/*Background color of each cell*/
+}
+tr, th {
+    padding: 15px 15px;/*Padding around each cell so one is not super small*/
+    -ms-overflow-style: none;  /* Internet Explorer 10+, <---------------Prevents scrollbar are unneccessary elements dependent on the browser*/
+    scrollbar-width: none;  /* Firefox  <---------------Prevents scrollbar are unneccessary elements dependent on the browser*/
+}
+tr::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome  <---------------Prevents scrollbar are unneccessary elements dependent on the browser*/
+}
+th::-webkit-scrollbar {
+    display: none;  /* Safari and Chrome <---------------Prevents scrollbar are unneccessary elements dependent on the browser*/
+}
+tr:nth-child(1) {
+    background: #042c84;/*Styles the first occuring row*/
+    border: none;
+    overflow: scroll;
+    top: 0;
+    position: sticky;/*First row will stay fixed on the viewport when scrolled*/
+    color: white;
+}
+th:nth-child(1) {
+    background: #042c84;/*Styles the first occuring column*/
+    border: none;
+    left: 0;
+    overflow: scroll;
+    position: sticky;/*First column will stay fixed on the viewport when scrolled*/
+    color: white;
+}
+th:hover {
+    background-color: #0086df;/*background color will change when hovered over each cell*/
+}
